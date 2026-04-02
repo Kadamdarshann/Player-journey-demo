@@ -144,7 +144,7 @@ def get_bounds(map_id: str) -> dict:
 
 def load_minimap_b64(map_id: str):
     img_name = MAP_IMAGES.get(map_id, "")
-    path = os.path.join("data_sample", "player_data", "minimaps", img_name)
+    path = os.path.join("data_sample","data_sample", "player_data", "minimaps", img_name)
     if not os.path.exists(path):
         return None
     img = Image.open(path).convert("RGBA")
